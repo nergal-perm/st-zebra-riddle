@@ -8,7 +8,192 @@
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T19:09:53.134175+03:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T19:09:54.16837+03:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "ozz2lzG0DQCpOavwCgzzGA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "На одной улице стоят пять домов, окрашенных в пять разных цветов. В каждом доме живет гражданин другой страны. Каждый из них пьет свой напиток, курит свои сигареты и содержит свое домашнее животное. Определите, кто из них держит рыбок."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T19:09:54.863466+03:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T19:10:13.948011+03:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "0Z0QmDG0DQCpQsv4CgzzGA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "1. Британец живет в красном доме\n2. У шведа есть собака\n3. Датчанин пьет чай\n4. Зеленый дом стоит слева от белого, вплотную к нему\n5. Хозяин зеленого дома пьет кофе\n6. У того, кто курит Pall-Mall, есть птицы\n7. Хозяин желтого дома курит Dunhill\n8. Хозяин среднего дома пьет молоко\n9. Норвежец живет в первом доме\n10. Человек, который курит Blends, живет рядом с хозяином котов\n11. Тот, кто содержит лошадей, живет рядом с тем, кто курит Dunhill\n12. Тот, кто курит Blue Master, пьет пиво\n13. Немец курит Prince\n14. Норвежец живет рядом с синим домом\n15. У того, кто курит Blends, есть сосед, который пьет воду"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T18:52:12.547643+03:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T18:53:13.487285+03:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "O/S+WDG0DQCE5jdYCgzzGA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Решение задачи может быть описано в виде таблицы из пяти строк и шести столбцов, вот таким образом:"
+						},
+						{
+							"__type" : "pictureSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T18:53:23.791179+03:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T18:54:52.130862+03:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "PBL+XDG0DQCG/+MECgzzGA=="
+							},
+							"url" : "attachments/1h69y0rxgr655b0ixna4k1rs3/Screenshot from 2023-03-26 18-53-45.png",
+							"caption" : "Исходная таблица решения",
+							"previewHeight" : 300
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T19:11:51.892054+03:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T19:11:52.899341+03:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "qUoKnzG0DQCqhJzVCgzzGA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "{{gtTodo:label=Представить решение задачи в виде таблицы}}"
+						}
+					]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -18,7 +203,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-26T10:32:06.587554+03:00"
+						"dateAndTimeString" : "2023-03-26T19:09:46.145039+03:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +214,501 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-26T10:32:46.706352+03:00"
+						"dateAndTimeString" : "2023-03-26T19:09:52.218655+03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "5QZfWyq0DQC1Pq4ZCmPtkQ=="
+					"uidString" : "zo0LlzG0DQCooXVpCgzzGA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Условия задачи]]"
+				"string" : "## Условие задачи"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T18:55:14.499807+03:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T18:56:25.710611+03:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "blCXYzG0DQCHBCuzCgzzGA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Алгоритм решения потребует формального описания условий в виде, близком к структуре нашей таблицы. Большинство условий допускают такую формализацию:"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T18:56:39.567139+03:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T18:57:04.165244+03:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "5dd4aDG0DQCKRnlqCgzzGA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "{{gtTodo:label=Добавить все условия, описывающие одну строку}}"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T18:57:06.570761+03:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T18:58:24.412514+03:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "QmlFajG0DQCL1TePCgzzGA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Остальные условия не вписываются в одну строку и, более того, могут иметь разветвления. Условия, описывающие несколько строк таблицы, мы назовем **блоком**."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T18:58:25.146842+03:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T18:59:24.335519+03:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "oFv0bjG0DQCPmd5FCgzzGA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "{{gtTodo:label=Добавить условие-блок №4}}"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T18:58:42.975891+03:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T19:00:05.619039+03:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "O24EcDG0DQCQiCFQCgzzGA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Условия, требующие разветвления, также можно представить в виде блоков, только нужно будет заменить одно условие двумя взаимоисключающими."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T19:01:05.369952+03:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T19:01:06.401244+03:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "4y+BeDG0DQCVD6C4CgzzGA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "{{gtTodo:label=Добавить разветвленные условия}}"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-03-26T19:07:05.6515+03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-03-26T19:07:10.154025+03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "c595jTG0DQCl1OKzCgzzGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "## Формализация условий"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T19:01:07.480894+03:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T19:03:12.516758+03:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "HmOheDG0DQCVH81BCgzzGA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Условия, в которых на одних и тех же позициях встречаются одни и те же значения, мы назовем **сцепленными**. Такие условия позволяют формировать блоки большего размера. Для блоков большего размера существуем меньше возможных вариантов размещения в таблице, в идеале такой вариант - единственный. Максимально возможный блок в данной задаче охватывает 5 строк."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T19:03:27.729122+03:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T19:05:09.08619+03:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "d6ccgDG0DQCdG8MICgzzGA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Два строковых условия называются **несовместимыми**, если они содержат разные значения на одной и той же позиции. Для пары блоков это понятие усложняется, для определения несовместимости приходится фиксировать (т.е. выбирать для расчета совместимости) в каждом блоке одну строку."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T19:06:01.152777+03:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T19:06:23.098493+03:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "TXgiijG0DQCjbhwSCgzzGA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Блок **противоречит** строке, если они сцеплены, но при этом часть блока выходит за пределы таблицы решений."
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-03-26T19:07:58.948502+03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-03-26T19:08:14.229248+03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "s7hskDG0DQCmkig5CgzzGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "## Объединение условий"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T19:09:04.605388+03:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T19:13:05.340778+03:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "k70RlTG0DQConTqkCgzzGA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Условия, у которых в первом столбце (номер дома) стоит число, называются **прямыми** и могут быть сразу же разме"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-03-26T19:08:30.651459+03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-03-26T19:08:56.119852+03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "iqALkzG0DQCn3QvUCgzzGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "## Заполнение таблицы"
 			},
 			{
 				"__type" : "textSnippet",
@@ -208,7 +877,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-26T10:35:12.854115+03:00"
+						"dateAndTimeString" : "2023-03-26T10:35:21.045008+03:00"
 					}
 				},
 				"uid" : {
@@ -216,6 +885,40 @@
 					"uidString" : "5oVMZyq0DQC2ivy7CmPtkQ=="
 				},
 				"code" : "constraint := Constraint withEntities: { entity . anotherEntity }"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-03-26T10:35:21.359149+03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-03-26T10:35:22.309229+03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "aVbcZyq0DQC2opTOCmPtkQ=="
+				},
+				"code" : "puzzle := Puzzle new\r\taddConstraint: constraint"
 			},
 			{
 				"__type" : "textSnippet",
@@ -312,12 +1015,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-03-26T10:31:51.802008+03:00"
+			"dateAndTimeString" : "2023-03-26T10:35:33.051306+03:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Оглавление"
+		"title" : "Загадка Эйнштейна"
 	},
 	"uid" : {
 		"__type" : "uuid",
