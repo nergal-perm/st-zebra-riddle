@@ -4,7 +4,7 @@ Class {
 	#instVars : [
 		'features'
 	],
-	#category : #EwcZebraRiddle
+	#category : #'EwcZebraRiddle-Core'
 }
 
 { #category : #accessing }

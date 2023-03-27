@@ -2,49 +2,28 @@ Class {
 	#name : #Feature,
 	#superclass : #Object,
 	#instVars : [
-		'type',
-		'value'
+		'name',
+		'values'
 	],
-	#category : #EwcZebraRiddle
+	#category : #'EwcZebraRiddle-Core'
 }
 
-{ #category : #accessing }
-Feature class >> cigarettes [
+{ #category : #'instance creation' }
+Feature class >> withName: aString andValues: aCollection [ 
 	^ Feature new
-		type: #cigarettes;
+		setName: aString;
+		setValues: aCollection;
 		yourself.
 ]
 
-{ #category : #accessing }
-Feature class >> houseColor [
-	^ Feature new
-		type: #houseColor;
-		yourself.
+{ #category : #private }
+Feature >> setName: aString [
+
+	name := aString
 ]
 
-{ #category : #accessing }
-Feature class >> houseOrder [
-	^ Feature new
-		type: #houseOrder;
-		yourself.
-]
+{ #category : #private }
+Feature >> setValues: aCollection [
 
-{ #category : #accessing }
-Feature >> type [
-	^ type
-]
-
-{ #category : #accessing }
-Feature >> type: aString [ 
-	type := aString
-]
-
-{ #category : #accessing }
-Feature >> value [
-	^ value
-]
-
-{ #category : #accessing }
-Feature >> withValue: aValue [
-	value := aValue
+	values := aCollection
 ]

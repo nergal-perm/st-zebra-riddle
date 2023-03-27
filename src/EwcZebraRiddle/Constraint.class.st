@@ -4,12 +4,17 @@ Class {
 	#instVars : [
 		'entities'
 	],
-	#category : #EwcZebraRiddle
+	#category : #'EwcZebraRiddle-Core'
 }
 
 { #category : #accessing }
 Constraint class >> withEntities: aCollection [
 	^ Constraint new entities: aCollection asOrderedCollection
+]
+
+{ #category : #converting }
+Constraint >> asBrItemsProvider [
+	^ BrSequenceableCollectionItemsProvider forCollection: self entities
 ]
 
 { #category : #accessing }

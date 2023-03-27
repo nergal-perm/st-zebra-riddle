@@ -2,10 +2,20 @@ Class {
 	#name : #Puzzle,
 	#superclass : #Object,
 	#instVars : [
-		'constraints'
+		'constraints',
+		'features',
+		'entityCount',
+		'currentState'
 	],
-	#category : #EwcZebraRiddle
+	#category : #'EwcZebraRiddle-Core'
 }
+
+{ #category : #'instance creation' }
+Puzzle class >> withFeatures: aCollection andEntityCount: anInteger [
+	^ Puzzle new
+		setFeatures: aCollection andEntityCount: anInteger;
+		yourself.
+]
 
 { #category : #accessing }
 Puzzle >> addConstraint: aConstraint [ 
@@ -13,6 +23,28 @@ Puzzle >> addConstraint: aConstraint [
 ]
 
 { #category : #accessing }
+Puzzle >> gtPuzzleCurrentStateFor: aView [
+	<gtView>
+	^ aView columnedList
+		title: 'Текущее состояние';
+		priority: 1;
+		items: currentState.
+		
+]
+
+{ #category : #accessing }
 Puzzle >> initialize [
 	constraints := OrderedCollection new.
+]
+
+{ #category : #accessing }
+Puzzle >> isEmpty [
+	^ features isEmpty and: entityCount = 0
+]
+
+{ #category : #private }
+Puzzle >> setFeatures: aCollection andEntityCount: anInteger [
+	features := aCollection.
+	entityCount := anInteger.
+	currentState := Constraint withEntities: #().
 ]
