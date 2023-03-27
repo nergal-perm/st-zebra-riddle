@@ -256,7 +256,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-03-26T18:56:25.710611+03:00"
+									"dateAndTimeString" : "2023-03-26T20:53:40.563763+03:00"
 								}
 							},
 							"uid" : {
@@ -266,7 +266,43 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Алгоритм решения потребует формального описания условий в виде, близком к структуре нашей таблицы. Большинство условий допускают такую формализацию:"
+							"string" : "Алгоритм решения потребует формального описания условий в виде, близком к структуре нашей таблицы. Большинство условий допускают такую формализацию. Возможно, стоит использовать схему, подобную приведенной на картинке (пример для другой задачи)."
+						},
+						{
+							"__type" : "pictureSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T20:52:14.312934+03:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T20:53:26.528177+03:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "OjEBBjO0DQCO7IAjAltoTA=="
+							},
+							"url" : "attachments/4iuh7r40xs86vog7vz1g93kmn/Screenshot from 2023-03-26 20-45-57.png",
+							"caption" : "Пример задания условий",
+							"previewHeight" : 460.26161887428975
 						},
 						{
 							"__type" : "textSnippet",
@@ -665,7 +701,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-03-26T19:13:05.340778+03:00"
+									"dateAndTimeString" : "2023-03-26T19:13:11.273839+03:00"
 								}
 							},
 							"uid" : {
@@ -675,7 +711,81 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Условия, у которых в первом столбце (номер дома) стоит число, называются **прямыми** и могут быть сразу же разме"
+							"string" : "Условия, у которых в первом столбце (номер дома) стоит число, называются **прямыми** и могут быть сразу же размещены в таблице решения."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T19:13:14.13691+03:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T20:54:16.098951+03:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "607xozG0DQCuFAC7CgzzGA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "{{gtTodo:label=Разместить прямые блоки в таблице}"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T19:13:28.617741+03:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-26T19:13:28.617741+03:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "FEHOpDG0DQCu+ZKhCgzzGA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : ""
 						}
 					]
 				},
