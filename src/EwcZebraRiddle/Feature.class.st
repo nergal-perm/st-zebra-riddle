@@ -16,6 +16,17 @@ Feature class >> withName: aString andValues: aCollection [
 		yourself.
 ]
 
+{ #category : #converting }
+Feature >> asFeatureValue: aValue [
+	^ (self contains: aValue)
+		ifTrue: [ FeatureValue new withValue: aValue; type: name; yourself].
+]
+
+{ #category : #testing }
+Feature >> contains: aValue [
+	^ values anySatisfy: [:each | each = aValue].
+]
+
 { #category : #private }
 Feature >> setName: aString [
 

@@ -34,7 +34,7 @@ Constraint >> gtConstraintTableFor: aView [
 		title: 'Таблица ограничений';
 		priority: 1;
 		items: entities;
-		column: 'Номер дома' text: [ :entity | entity featureValue: #houseOrder ];
+		column: #'Номер дома' text: [ :entity | entity featureValue: #'Номер дома'];
 		column: 'Национальность'
 			text: [ :entity | entity featureValue: #nationality ];
 		column: 'Цвет дома' text: [ :entity | entity featureValue: #houseColor ];

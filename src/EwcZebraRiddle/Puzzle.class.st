@@ -46,5 +46,8 @@ Puzzle >> isEmpty [
 Puzzle >> setFeatures: aCollection andEntityCount: anInteger [
 	features := aCollection.
 	entityCount := anInteger.
-	currentState := Constraint withEntities: #().
+
+	currentState := Constraint
+			withEntities: ((1 to: entityCount)
+					collect: [ :each | Entity new addFeature: (features first asFeatureValue: each) ])
 ]
