@@ -738,7 +738,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-03-26T20:54:16.098951+03:00"
+									"dateAndTimeString" : "2023-03-26T20:54:19.965155+03:00"
 								}
 							},
 							"uid" : {
@@ -748,7 +748,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "{{gtTodo:label=Разместить прямые блоки в таблице}"
+							"string" : "{{gtTodo:label=Разместить прямые блоки в таблице}}"
 						},
 						{
 							"__type" : "textSnippet",
