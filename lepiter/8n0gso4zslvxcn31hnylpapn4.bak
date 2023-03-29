@@ -248,6 +248,43 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-29T09:44:47.335836+03:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-29T09:44:57.864657+03:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "7e+KDGa0DQCVn6hsCdFnQg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "[[Композиция условий"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
 									"dateAndTimeString" : "2023-03-26T18:55:14.499807+03:00"
 								}
 							},
@@ -332,7 +369,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-03-26T18:57:04.165244+03:00"
+									"dateAndTimeString" : "2023-03-29T08:48:14.134411+03:00"
 								}
 							},
 							"uid" : {
@@ -342,7 +379,44 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "{{gtTodo:label=Добавить все условия, описывающие одну строку}}"
+							"string" : "{{gtTodo:label=Добавить все условия, описывающие одну строку}}\n{{gtTodo:label=Найти способ отрисовать условия в виде карточек или кастомного списка}}"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-29T08:48:15.635333+03:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-29T08:48:15.635333+03:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "hrVhQmW0DQCU/K8XCdFnQg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : ""
 						},
 						{
 							"__type" : "exampleSnippet",
@@ -376,8 +450,10 @@
 								"__type" : "uid",
 								"uidString" : "ivjgbGS0DQCSRC+ZAFSRWg=="
 							},
+							"exampleSelector" : "puzzleWithSimpleConstraints",
 							"previewHeight" : 200,
 							"previewShowSelector" : "gtViewsFor:",
+							"exampleBehaviorName" : "ZebraRiddleExamples",
 							"codeExpanded" : true,
 							"previewExpanded" : false,
 							"noCode" : false

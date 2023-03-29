@@ -8,7 +8,7 @@ Class {
 ZebraRiddleExamples >> allFeatures [
 	<gtExample>
 	| features |
-	features := Features
+	features := Domain
 			withFeatures: {self featureHouseOrder.
 					self featureNationality.
 					self featureHouseColor.

@@ -22,6 +22,11 @@ Feature >> asFeatureValue: aValue [
 		ifTrue: [ FeatureValue new withValue: aValue; type: name; yourself].
 ]
 
+{ #category : #accessing }
+Feature >> asTuples [
+	^ values collect: [ :value | name -> value ]
+]
+
 { #category : #testing }
 Feature >> contains: aValue [
 	^ values anySatisfy: [:each | each = aValue].
