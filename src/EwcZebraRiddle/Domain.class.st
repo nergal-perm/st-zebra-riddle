@@ -3,7 +3,8 @@ Class {
 	#superclass : #Object,
 	#instVars : [
 		'features',
-		'tuples'
+		'tuples',
+		'mainFeature'
 	],
 	#category : #'EwcZebraRiddle-Core'
 }
@@ -11,7 +12,6 @@ Class {
 { #category : #'instance creation' }
 Domain class >> withFeatures: aCollection [
 	^ Domain new
-		setFeatures: aCollection;
 		setTuples: aCollection;
 		yourself
 ]
@@ -28,17 +28,16 @@ Domain >> asItems [
 ]
 
 { #category : #accessing }
-Domain >> first [
-	^ features first
-]
-
-{ #category : #accessing }
 Domain >> getFeature: aName withValue: aValue [
-		^ (features detect: [ :feature | feature hasName: aName ])
-		asFeatureValue: aValue
+	^ tuples detect: [:tuple | (tuple key = aName) and: (tuple value = aValue)]
 ]
 
 { #category : #accessing }
+Domain >> getMainFeatureWithValue: aValue [
+	^ self getFeature: mainFeature withValue: aValue
+]
+
+{ #category : #'view creation' }
 Domain >> gtValuesByFeatureFor: aView [
 	<gtView>
 	^ aView groupedList
@@ -49,23 +48,11 @@ Domain >> gtValuesByFeatureFor: aView [
 ]
 
 { #category : #accessing }
-Domain >> houseColor: aHouseColor [
-	^ (features detect: [ :feature | feature hasName: #'Цвет дома' ])
-		asFeatureValue: aHouseColor
-]
-
-{ #category : #accessing }
-Domain >> nationality: aNationality [
-	^ (features detect: [ :feature | feature hasName: #Национальность ])
-		asFeatureValue: aNationality
+Domain >> mainFeature: aFeatureName [
+	mainFeature := aFeatureName
 ]
 
 { #category : #private }
-Domain >> setFeatures: aCollection [ 
-	features := aCollection
-]
-
-{ #category : #'instance creation' }
 Domain >> setTuples: aCollection [
 	tuples := OrderedCollection new.
 	aCollection do: [ :feature | tuples addAll: feature asTuples ]

@@ -9,7 +9,7 @@ Class {
 
 { #category : #accessing }
 Entity >> addFeature: aFeature [
-	features at: (aFeature type) put: (aFeature value)
+	features at: (aFeature key) put: (aFeature value)
 	 
 ]
 
