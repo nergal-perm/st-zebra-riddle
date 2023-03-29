@@ -25,10 +25,11 @@ Puzzle >> addConstraint: aConstraint [
 { #category : #accessing }
 Puzzle >> gtPuzzleCurrentStateFor: aView [
 	<gtView>
-	^ aView columnedList
+	^ aView forward
 		title: 'Текущее состояние';
 		priority: 1;
-		items: currentState.
+		object: currentState;
+		view: #gtConstraintTableFor:
 		
 ]
 

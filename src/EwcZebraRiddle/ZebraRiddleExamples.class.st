@@ -5,6 +5,21 @@ Class {
 }
 
 { #category : #accessing }
+ZebraRiddleExamples >> allFeatures [
+	<gtExample>
+	| features |
+	features := Features
+			withFeatures: {self featureHouseOrder.
+					self featureNationality.
+					self featureHouseColor.
+					self featureDrink.
+					self featureCigarettes.
+					self featureAnimal}.
+					
+	^ features 
+]
+
+{ #category : #accessing }
 ZebraRiddleExamples >> emptyPuzzle [
 	<gtExample>
 	| puzzle |
@@ -57,8 +72,25 @@ ZebraRiddleExamples >> minimumViablePuzzle [
 	<description: 'Минимально допустимое состояние загадки Эйнштейна'>
 	| puzzle |
 	puzzle := Puzzle
-			withFeatures: {self featureHouseOrder}
+			withFeatures: self allFeatures
 			andEntityCount: 5.
+
+	^ puzzle
+]
+
+{ #category : #accessing }
+ZebraRiddleExamples >> puzzleWithSimpleConstraints [
+	<gtExample>
+	| puzzle features |
+	features := self allFeatures.
+	puzzle := self minimumViablePuzzle.
+
+	puzzle
+		addConstraint: (Constraint
+				withEntities: {Entity new
+							addFeature: (features nationality: #британец);
+							addFeature: (features houseColor: #красный)}).
+	
 
 	^ puzzle
 ]

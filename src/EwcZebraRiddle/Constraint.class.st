@@ -2,7 +2,8 @@ Class {
 	#name : #Constraint,
 	#superclass : #Object,
 	#instVars : [
-		'entities'
+		'entities',
+		'id'
 	],
 	#category : #'EwcZebraRiddle-Core'
 }
@@ -10,6 +11,13 @@ Class {
 { #category : #accessing }
 Constraint class >> withEntities: aCollection [
 	^ Constraint new entities: aCollection asOrderedCollection
+]
+
+{ #category : #accessing }
+Constraint class >> withEntities: aCollection andId: anId [
+	^ Constraint new 
+		entities: aCollection asOrderedCollection;
+		id: anId.
 ]
 
 { #category : #converting }
@@ -36,11 +44,16 @@ Constraint >> gtConstraintTableFor: aView [
 		items: entities;
 		column: #'Номер дома' text: [ :entity | entity featureValue: #'Номер дома'];
 		column: 'Национальность'
-			text: [ :entity | entity featureValue: #nationality ];
-		column: 'Цвет дома' text: [ :entity | entity featureValue: #houseColor ];
-		column: 'Напиток' text: [ :entity | entity featureValue: #drink ];
-		column: 'Сигареты' text: [ :entity | entity featureValue: #cigarettes ];
-		column: 'Животное' text: [ :entity | entity featureValue: #animal ]
+			text: [ :entity | entity featureValue: #Национальность ];
+		column: 'Цвет дома' text: [ :entity | entity featureValue: #'Цвет дома' ];
+		column: 'Напиток' text: [ :entity | entity featureValue: #Напиток ];
+		column: 'Сигареты' text: [ :entity | entity featureValue: #Сигареты ];
+		column: 'Животное' text: [ :entity | entity featureValue: #Животное ]
+]
+
+{ #category : #accessing }
+Constraint >> id: anId [ 
+	id := anId
 ]
 
 { #category : #accessing }
