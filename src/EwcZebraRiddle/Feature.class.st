@@ -19,7 +19,7 @@ Feature class >> withName: aString andValues: aCollection [
 { #category : #converting }
 Feature >> asFeatureValue: aValue [
 	^ (self contains: aValue)
-		ifTrue: [ FeatureValue new withValue: aValue; type: name; yourself].
+		ifTrue: [ name -> aValue].
 ]
 
 { #category : #accessing }

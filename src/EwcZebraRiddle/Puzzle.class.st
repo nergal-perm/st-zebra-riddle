@@ -3,7 +3,7 @@ Class {
 	#superclass : #Object,
 	#instVars : [
 		'constraints',
-		'features',
+		'domain',
 		'entityCount',
 		'currentState'
 	],
@@ -11,9 +11,9 @@ Class {
 }
 
 { #category : #'instance creation' }
-Puzzle class >> withFeatures: aCollection andEntityCount: anInteger [
+Puzzle class >> withDomain: aCollection andEntityCount: anInteger [
 	^ Puzzle new
-		setFeatures: aCollection andEntityCount: anInteger;
+		setDomain: aCollection andEntityCount: anInteger;
 		yourself.
 ]
 
@@ -44,11 +44,11 @@ Puzzle >> isEmpty [
 ]
 
 { #category : #private }
-Puzzle >> setFeatures: aCollection andEntityCount: anInteger [
-	features := aCollection.
+Puzzle >> setDomain: aCollection andEntityCount: anInteger [
+	domain := aCollection.
 	entityCount := anInteger.
 
 	currentState := Constraint
 			withEntities: ((1 to: entityCount)
-					collect: [ :each | Entity new addFeature: (features first asFeatureValue: each) ])
+					collect: [ :each | Entity new addFeature: (domain getMainFeatureWithValue: each) ])
 ]

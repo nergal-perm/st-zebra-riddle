@@ -5,25 +5,25 @@ Class {
 }
 
 { #category : #accessing }
-ZebraRiddleExamples >> allFeatures [
+ZebraRiddleExamples >> domain [
 	<gtExample>
-	| features |
-	features := Domain
+	| describedDomain |
+	describedDomain := Domain
 			withFeatures: {self featureHouseOrder.
 					self featureNationality.
 					self featureHouseColor.
 					self featureDrink.
 					self featureCigarettes.
 					self featureAnimal}.
-					
-	^ features 
+	describedDomain mainFeature: #'Номер дома'.
+	^ describedDomain 
 ]
 
 { #category : #accessing }
 ZebraRiddleExamples >> emptyPuzzle [
 	<gtExample>
 	| puzzle |
-	puzzle := Puzzle withFeatures: #() andEntityCount: 0.
+	puzzle := Puzzle withDomain: #() andEntityCount: 0.
 
 	self assert: puzzle isEmpty.
 	
@@ -72,7 +72,7 @@ ZebraRiddleExamples >> minimumViablePuzzle [
 	<description: 'Минимально допустимое состояние загадки Эйнштейна'>
 	| puzzle |
 	puzzle := Puzzle
-			withFeatures: self allFeatures
+			withDomain: self domain
 			andEntityCount: 5.
 
 	^ puzzle
@@ -82,14 +82,14 @@ ZebraRiddleExamples >> minimumViablePuzzle [
 ZebraRiddleExamples >> puzzleWithSimpleConstraints [
 	<gtExample>
 	| puzzle features |
-	features := self allFeatures.
+	features := self domain.
 	puzzle := self minimumViablePuzzle.
 
 	puzzle
 		addConstraint: (Constraint
 				withEntities: {Entity new
-							addFeature: (features nationality: #британец);
-							addFeature: (features houseColor: #красный)}).
+							addFeature: (features getFeature: #Национальность withValue: #британец);
+							addFeature: (features getFeature: #'Цвет дома' withValue: #красный)}).
 	
 
 	^ puzzle
