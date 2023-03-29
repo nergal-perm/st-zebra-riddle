@@ -27,6 +27,11 @@ Feature >> contains: aValue [
 	^ values anySatisfy: [:each | each = aValue].
 ]
 
+{ #category : #accessing }
+Feature >> hasName: aName [
+	^ name = aName
+]
+
 { #category : #private }
 Feature >> setName: aString [
 

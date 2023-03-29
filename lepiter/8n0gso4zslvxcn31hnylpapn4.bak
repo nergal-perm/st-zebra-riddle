@@ -8,81 +8,44 @@
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-03-29T07:46:35.307045+03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-03-29T07:46:35.311485+03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "eAx0ZWS0DQCRRnYwAFSRWg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "[[Условие задачи]]"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
 					"items" : [
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-03-26T19:09:53.134175+03:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-03-26T19:09:54.16837+03:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "ozz2lzG0DQCpOavwCgzzGA=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "На одной улице стоят пять домов, окрашенных в пять разных цветов. В каждом доме живет гражданин другой страны. Каждый из них пьет свой напиток, курит свои сигареты и содержит свое домашнее животное. Определите, кто из них держит рыбок."
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-03-26T19:09:54.863466+03:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-03-26T19:10:13.948011+03:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "0Z0QmDG0DQCpQsv4CgzzGA=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "1. Британец живет в красном доме\n2. У шведа есть собака\n3. Датчанин пьет чай\n4. Зеленый дом стоит слева от белого, вплотную к нему\n5. Хозяин зеленого дома пьет кофе\n6. У того, кто курит Pall-Mall, есть птицы\n7. Хозяин желтого дома курит Dunhill\n8. Хозяин среднего дома пьет молоко\n9. Норвежец живет в первом доме\n10. Человек, который курит Blends, живет рядом с хозяином котов\n11. Тот, кто содержит лошадей, живет рядом с тем, кто курит Dunhill\n12. Тот, кто курит Blue Master, пьет пиво\n13. Немец курит Prince\n14. Норвежец живет рядом с синим домом\n15. У того, кто курит Blends, есть сосед, который пьет воду"
-						},
 						{
 							"__type" : "textSnippet",
 							"children" : {
@@ -181,7 +144,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-03-26T19:11:52.899341+03:00"
+									"dateAndTimeString" : "2023-03-29T07:42:09.562276+03:00"
 								}
 							},
 							"uid" : {
@@ -191,10 +154,10 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "{{gtTodo:label=Представить решение задачи в виде таблицы}}"
+							"string" : "{{gtTodo:label=Представить решение задачи в виде таблицы|completed=2023-03-29}}"
 						},
 						{
-							"__type" : "pharoSnippet",
+							"__type" : "exampleSnippet",
 							"children" : {
 								"__type" : "snippets",
 								"items" : [ ]
@@ -207,7 +170,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-03-27T07:42:48.608545+03:00"
+									"dateAndTimeString" : "2023-03-29T07:32:46.350422+03:00"
 								}
 							},
 							"editEmail" : {
@@ -218,14 +181,20 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-03-27T08:16:23.103019+03:00"
+									"dateAndTimeString" : "2023-03-29T07:32:46.350422+03:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "4kChHDy0DQCE7pIXBGf4Xw=="
+								"uidString" : "Kk5qNGS0DQCRIJ7kAFSRWg=="
 							},
-							"code" : "puzzle := Puzzle withFeatures: features andEntityCount: 5."
+							"exampleSelector" : "minimumViablePuzzle",
+							"previewHeight" : 200,
+							"previewShowSelector" : "gtViewsFor:",
+							"exampleBehaviorName" : "ZebraRiddleExamples",
+							"codeExpanded" : true,
+							"previewExpanded" : false,
+							"noCode" : false
 						}
 					]
 				},
@@ -248,7 +217,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-26T19:09:52.218655+03:00"
+						"dateAndTimeString" : "2023-03-29T07:47:30.366869+03:00"
 					}
 				},
 				"uid" : {
@@ -258,7 +227,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "## Условие задачи"
+				"string" : "## Формализация таблицы решения задачи"
 			},
 			{
 				"__type" : "textSnippet",
@@ -327,14 +296,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-03-27T07:47:41.268687+03:00"
+									"dateAndTimeString" : "2023-03-27T08:25:32.718943+03:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "OjEBBjO0DQCO7IAjAltoTA=="
 							},
-							"url" : ";attachments/4iuh7r40xs86vog7vz1g93kmn/Screenshot from 2023-03-26 20-45-57.png",
+							"url" : "attachments/4iuh7r40xs86vog7vz1g93kmn/Screenshot from 2023-03-26 20-45-57.png",
 							"caption" : "Пример задания условий",
 							"previewHeight" : 460.26161887428975
 						},
@@ -374,6 +343,44 @@
 								"__type" : "textStyle"
 							},
 							"string" : "{{gtTodo:label=Добавить все условия, описывающие одну строку}}"
+						},
+						{
+							"__type" : "exampleSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-29T07:48:33.651383+03:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-29T07:48:33.651383+03:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "ivjgbGS0DQCSRC+ZAFSRWg=="
+							},
+							"previewHeight" : 200,
+							"previewShowSelector" : "gtViewsFor:",
+							"codeExpanded" : true,
+							"previewExpanded" : false,
+							"noCode" : false
 						},
 						{
 							"__type" : "textSnippet",
