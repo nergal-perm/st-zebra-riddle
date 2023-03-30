@@ -5,6 +5,11 @@ Class {
 }
 
 { #category : #accessing }
+ZebraRiddleExamples >> animal [
+	^ #Животное
+]
+
+{ #category : #accessing }
 ZebraRiddleExamples >> domain [
 	<gtExample>
 	| describedDomain |
@@ -17,6 +22,16 @@ ZebraRiddleExamples >> domain [
 					self featureAnimal}.
 	describedDomain mainFeature: #'Номер дома'.
 	^ describedDomain 
+]
+
+{ #category : #accessing }
+ZebraRiddleExamples >> domainForFeature: name withValues: values [
+	^ values collect: [ :each | name -> each ]
+]
+
+{ #category : #accessing }
+ZebraRiddleExamples >> drink [
+	^ #Напиток
 ]
 
 { #category : #accessing }
@@ -33,37 +48,42 @@ ZebraRiddleExamples >> emptyPuzzle [
 { #category : #accessing }
 ZebraRiddleExamples >> featureAnimal [
 	<gtExample>
-	^ Feature withName: 'Питомцы' andValues: #('собаки' 'птицы' 'коты' 'лошади' 'рыбы')
+	^ self domainForFeature: self animal withValues: #('собаки' 'птицы' 'коты' 'лошади' 'рыбы')
 ]
 
 { #category : #accessing }
 ZebraRiddleExamples >> featureCigarettes [
 	<gtExample>
-	^ Feature withName: 'Сигареты' andValues: #('Prince' 'Pall-Mall' 'Dunhill' 'Blends' 'Blue Master')
+	^ self domainForFeature: #Сигареты withValues: #('Prince' 'Pall-Mall' 'Dunhill' 'Blends' 'Blue Master')
 ]
 
 { #category : #accessing }
 ZebraRiddleExamples >> featureDrink [
 	<gtExample>
-	^ Feature withName: 'Напиток' andValues: #('чай' 'кофе' 'молоко' 'пиво' 'вода')
+	^ self domainForFeature: #Напиток withValues: #('чай' 'кофе' 'молоко' 'пиво' 'вода')
 ]
 
 { #category : #accessing }
 ZebraRiddleExamples >> featureHouseColor [
 	<gtExample>
-	^ Feature withName: 'Цвет дома' andValues: #('красный' 'зеленый' 'желтый' 'синий' 'белый')
+	^ self domainForFeature: #'Цвет дома' withValues: #('красный' 'зеленый' 'желтый' 'синий' 'белый')
 ]
 
 { #category : #accessing }
 ZebraRiddleExamples >> featureHouseOrder [
 	<gtExample>
-	^ Feature withName: 'Номер дома' andValues: #(1 2 3 4 5)
+	^ self domainForFeature: #'Номер дома' withValues: #(1 2 3 4 5)
 ]
 
 { #category : #accessing }
 ZebraRiddleExamples >> featureNationality [
 	<gtExample>
-	^ Feature withName: 'Национальность' andValues: #('британец' 'швед' 'датчанин' 'норвежец' 'немец')
+	^ self domainForFeature: #Национальность withValues: #('британец' 'швед' 'датчанин' 'норвежец' 'немец') 
+]
+
+{ #category : #accessing }
+ZebraRiddleExamples >> houseColor [
+	^ #'Цвет дома'
 ]
 
 { #category : #accessing }
@@ -79,6 +99,11 @@ ZebraRiddleExamples >> minimumViablePuzzle [
 ]
 
 { #category : #accessing }
+ZebraRiddleExamples >> nationality [
+	^ #Национальность
+]
+
+{ #category : #accessing }
 ZebraRiddleExamples >> puzzleWithSimpleConstraints [
 	<gtExample>
 	| puzzle features |
@@ -86,11 +111,28 @@ ZebraRiddleExamples >> puzzleWithSimpleConstraints [
 	puzzle := self minimumViablePuzzle.
 
 	puzzle
-		addConstraint: (Constraint
-				withEntities: {Entity new
-							addFeature: (features getFeature: #Национальность withValue: #британец);
-							addFeature: (features getFeature: #'Цвет дома' withValue: #красный)}).
-	
+		addConstraint: (features
+				constraintId: '1'
+				withFeatures: {self nationality -> #британец.
+						self houseColor -> #красный});
+		addConstraint: (features
+				constraintId: '2'
+				withFeatures: {self nationality -> #швед.
+						self animal -> #собаки});
+		addConstraint: (features
+				constraintId: '3'
+				withFeatures: {self nationality -> #датчанин.
+						self drink -> #чай}).
+
 
 	^ puzzle
+]
+
+{ #category : #accessing }
+ZebraRiddleExamples >> simpleConstraint [
+	<gtExample>
+	| domain |
+	domain := self domain.
+	
+	^ domain constraintId: #'1' withFeatures: { #Национальность -> #британец . #'Цвет дома' -> #красный}.
 ]

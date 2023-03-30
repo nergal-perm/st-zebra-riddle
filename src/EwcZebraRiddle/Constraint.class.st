@@ -20,6 +20,14 @@ Constraint class >> withEntities: aCollection andId: anId [
 		id: anId.
 ]
 
+{ #category : #'instance creation' }
+Constraint class >> withId: anId andFeatures: aKeyValuePairCollection [ 
+	| entity |
+	entity := Entity new.
+	aKeyValuePairCollection do: [:each | entity addFeature: each key withValue: each value ].
+	^ self withEntities: { entity } andId: anId
+]
+
 { #category : #converting }
 Constraint >> asBrItemsProvider [
 	^ BrSequenceableCollectionItemsProvider forCollection: self entities

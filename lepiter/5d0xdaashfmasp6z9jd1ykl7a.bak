@@ -55,6 +55,43 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-03-30T08:58:39.688396+03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-03-30T09:01:18.593406+03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "IFRrhXm0DQCEJlP1ACOKqA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "1. Британец живет в красном доме {{gtExample:name=ZebraRiddleExamples>>#simpleConstraint|noCode|previewHeight=150|r}}"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2023-03-29T07:46:45.495847+03:00"
 					}
 				},
@@ -66,7 +103,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-29T07:46:45.495847+03:00"
+						"dateAndTimeString" : "2023-03-30T08:58:39.720239+03:00"
 					}
 				},
 				"uid" : {
@@ -76,7 +113,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "2. У шведа есть собака\n3. Датчанин пьет чай\n4. Зеленый дом стоит слева от белого, вплотную к нему\n5. Хозяин зеленого дома пьет кофе\n6. У того, кто курит Pall-Mall, есть птицы\n7. Хозяин желтого дома курит Dunhill\n8. Хозяин среднего дома пьет молоко\n9. Норвежец живет в первом доме\n10. Человек, который курит Blends, живет рядом с хозяином котов\n11. Тот, кто содержит лошадей, живет рядом с тем, кто курит Dunhill\n12. Тот, кто курит Blue Master, пьет пиво\n13. Немец курит Prince\n14. Норвежец живет рядом с синим домом\n15. У того, кто курит Blends, есть сосед, который пьет воду"
 			},
 			{
 				"__type" : "textSnippet",

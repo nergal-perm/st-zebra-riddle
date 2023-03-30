@@ -15,7 +15,7 @@ Entity >> addFeature: aFeature [
 
 { #category : #accessing }
 Entity >> addFeature: aFeature withValue: aValue [
-	features at: aFeature type put: aValue. 
+	features at: aFeature put: aValue. 
 ]
 
 { #category : #accessing }

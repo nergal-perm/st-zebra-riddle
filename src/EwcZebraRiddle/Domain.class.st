@@ -2,7 +2,6 @@ Class {
 	#name : #Domain,
 	#superclass : #Object,
 	#instVars : [
-		'features',
 		'tuples',
 		'mainFeature'
 	],
@@ -25,6 +24,11 @@ Domain >> asItems [
 			dict at: each key ifAbsentPut: [ OrderedCollection new ].
 			(dict at: each key) add: each value ].
 	^ dict associations
+]
+
+{ #category : #conversion }
+Domain >> constraintId: anId withFeatures: aCollection [
+	^ Constraint withId: anId andFeatures: (aCollection select: [:each | tuples contains: [:item | item = each]]).
 ]
 
 { #category : #accessing }
@@ -55,5 +59,5 @@ Domain >> mainFeature: aFeatureName [
 { #category : #private }
 Domain >> setTuples: aCollection [
 	tuples := OrderedCollection new.
-	aCollection do: [ :feature | tuples addAll: feature asTuples ]
+	aCollection do: [ :each | tuples addAll: each ]
 ]
