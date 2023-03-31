@@ -1,39 +1,31 @@
 Class {
-	#name : #Puzzle,
+	#name : #AlternativeConstraint,
 	#superclass : #Object,
 	#instVars : [
-		'constraints',
-		'domain',
-		'entityCount',
-		'currentState'
+		'alternatives'
 	],
 	#category : #'EwcZebraRiddle-Core'
 }
 
 { #category : #'instance creation' }
-Puzzle class >> withDomain: aCollection andEntityCount: anInteger [
-	^ Puzzle new
-		setDomain: aCollection andEntityCount: anInteger;
-		yourself.
+AlternativeConstraint class >> withAlternatives: aCollection [
+	aCollection doWithIndex: [ :each :index | each id: (each id , '-', index asString)].
+	^ self new setAlternatives: aCollection.
+	
 ]
 
 { #category : #accessing }
-Puzzle >> addConstraint: aConstraint [ 
-	constraints add: aConstraint
+AlternativeConstraint >> alternatives [
+	^ alternatives
 ]
 
 { #category : #accessing }
-Puzzle >> gtConstraints [
-	^ constraints flatCollect: [:each | (each isKindOf: AlternativeConstraint) ifTrue: [each alternatives] ifFalse: [ {each}]]
-]
-
-{ #category : #accessing }
-Puzzle >> gtPuzzleConstraintsFor: aView [
+AlternativeConstraint >> gtConstraintTableFor: aView [
 	<gtView>
 	^ aView columnedTree
-		title: 'Условия';
+		title: 'Таблица ограничений';
 		priority: 1;
-		items: self gtConstraints;
+		items: alternatives;
 		children: [ :each | each isEntity ifTrue: [ #() ] ifFalse: [ each entities ] ];
 		column: #Ид
 			text: [ :each | each isEntity ifTrue: [ '' ] ifFalse: [ each id ] ];
@@ -51,33 +43,7 @@ Puzzle >> gtPuzzleConstraintsFor: aView [
 			text: [ :each | each isEntity ifTrue: [ each featureValue: #Животное ] ifFalse: [ '' ] ]
 ]
 
-{ #category : #accessing }
-Puzzle >> gtPuzzleCurrentStateFor: aView [
-	<gtView>
-	^ aView forward
-		title: 'Текущее состояние';
-		priority: 2;
-		object: currentState;
-		view: #gtConstraintTableFor:
-		
-]
-
-{ #category : #accessing }
-Puzzle >> initialize [
-	constraints := OrderedCollection new.
-]
-
-{ #category : #accessing }
-Puzzle >> isEmpty [
-	^ features isEmpty and: entityCount = 0
-]
-
 { #category : #private }
-Puzzle >> setDomain: aCollection andEntityCount: anInteger [
-	domain := aCollection.
-	entityCount := anInteger.
-
-	currentState := Constraint
-			withEntities: ((1 to: entityCount)
-					collect: [ :each | Entity new addFeature: (domain getMainFeatureWithValue: each) ])
+AlternativeConstraint >> setAlternatives: aCollection [
+	alternatives := aCollection
 ]

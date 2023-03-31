@@ -233,6 +233,43 @@
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-03-29T09:44:47.335836+03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-03-29T09:44:59.720474+03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "7e+KDGa0DQCVn6hsCdFnQg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "[[Композиция условий]]"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
 					"items" : [
 						{
 							"__type" : "textSnippet",
@@ -483,7 +520,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-03-26T18:59:24.335519+03:00"
+									"dateAndTimeString" : "2023-03-31T07:58:04.788731+03:00"
 								}
 							},
 							"uid" : {
@@ -493,7 +530,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "{{gtTodo:label=Добавить условие-блок №4}}"
+							"string" : "{{gtTodo:label=Добавить условие-блок №4|completed=2023-03-31}}"
 						},
 						{
 							"__type" : "textSnippet",
@@ -557,7 +594,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-03-26T19:01:06.401244+03:00"
+									"dateAndTimeString" : "2023-03-31T16:53:08.054343+03:00"
 								}
 							},
 							"uid" : {
@@ -567,7 +604,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "{{gtTodo:label=Добавить разветвленные условия}}"
+							"string" : "{{gtTodo:label=Добавить разветвленные условия|completed=2023-03-31}}"
 						}
 					]
 				},
@@ -601,43 +638,6 @@
 					"__type" : "textStyle"
 				},
 				"string" : "## Формализация условий"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-29T09:44:47.335836+03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-29T09:44:59.720474+03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "7e+KDGa0DQCVn6hsCdFnQg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "[[Композиция условий]]"
 			},
 			{
 				"__type" : "textSnippet",
@@ -818,7 +818,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-03-26T19:13:11.273839+03:00"
+									"dateAndTimeString" : "2023-03-31T18:42:44.265703+03:00"
 								}
 							},
 							"uid" : {
@@ -828,7 +828,44 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Условия, у которых в первом столбце (номер дома) стоит число, называются **прямыми** и могут быть сразу же размещены в таблице решения."
+							"string" : "Условия, у которых в первом столбце (номер дома) стоит число, называются **прямыми** и могут быть сразу же размещены в таблице решения.\nПо большому счету, правда, дело не в том, что это прямые условия, а в том, что только они являются **сцепленными** для начального состояния головоломки."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-31T18:41:36.665725+03:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-03-31T18:52:09.18436+03:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "TA4NyJW0DQCyX5whChcTFQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Такое ощущение, что любое размещение блоков в итоговой таблице - это всего лишь операция объединения (сцепления) блоков. Мне сейчас кажется, что решение будет заключаться в проходе по таблице с одной из нескольких операций: объединение условий (возможно, это разовая операция в начале решения), сцепление имеющихся условий с итоговой таблицей, размещение единственно возможных вариантов (когда все остальные строки заняты, и остается одно возможное зз"
 						},
 						{
 							"__type" : "textSnippet",
@@ -903,43 +940,6 @@
 								"__type" : "textStyle"
 							},
 							"string" : ""
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-03-26T19:13:28.617741+03:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-03-26T19:13:28.617741+03:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "FEHOpDG0DQCu+ZKhCgzzGA=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : ""
 						}
 					]
 				},
@@ -973,253 +973,6 @@
 					"__type" : "textStyle"
 				},
 				"string" : "## Заполнение таблицы"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-26T10:32:47.4935+03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-26T10:33:25.191326+03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "9IOwXiq0DQC102drCmPtkQ=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "[[TODO]]"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-26T10:33:26.721769+03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-26T10:33:26.721769+03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "fBkHYSq0DQC2ARB2CmPtkQ=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-26T10:34:52.992973+03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-26T10:34:53.986154+03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "FGErZiq0DQC2bqTlCmPtkQ=="
-				},
-				"code" : "firstHouse := Feature houseOrder withValue: 1.\ryellowHouse := Feature houseColor withValue: 'желтый'.\rpallMallCigs := Feature cigarettes withValue: 'Pall-Mall'"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-26T10:34:56.769795+03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-26T10:35:04.879049+03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "KiFlZiq0DQC2d4YVCmPtkQ=="
-				},
-				"code" : "entity := (Entity new)\r\taddFeature: firstHouse;\r\tyourself.\ranotherEntity := Entity new\r\taddFeature: yellowHouse;\r\taddFeature: pallMallCigs;\r\tyourself."
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-26T10:35:11.934689+03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-26T10:35:21.045008+03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "5oVMZyq0DQC2ivy7CmPtkQ=="
-				},
-				"code" : "constraint := Constraint withEntities: { entity . anotherEntity }"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-26T10:35:21.359149+03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-26T10:35:22.309229+03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "aVbcZyq0DQC2opTOCmPtkQ=="
-				},
-				"code" : "puzzle := Puzzle new\r\taddConstraint: constraint"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-26T10:32:15.419366+03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-26T10:32:15.419366+03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "Mx7HXCq0DQC1sGQiCmPtkQ=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
 			},
 			{
 				"__type" : "textSnippet",
