@@ -215,7 +215,7 @@ ZebraRiddleExamples >> featureHouseOrder [
 { #category : #accessing }
 ZebraRiddleExamples >> featureNationality [
 	<gtExample>
-	^ self domainForFeature: #Национальность withValues: #('британец' 'швед' 'датчанин' 'норвежец' 'немец') 
+	^ self domainForFeature: #Национальность withValues: #(#британец #швед #датчанин #норвежец #немец) 
 ]
 
 { #category : #accessing }

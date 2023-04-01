@@ -8,9 +8,16 @@ Class {
 }
 
 { #category : #accessing }
+Entity class >> withFeatures: values [
+	| entity |
+	entity := Entity new.
+	values do: [ :each | entity addFeature: each ].
+	^ entity
+]
+
+{ #category : #accessing }
 Entity >> addFeature: aFeature [
-	features at: (aFeature key) put: (aFeature value)
-	 
+	self addFeature: aFeature key withValue: aFeature value
 ]
 
 { #category : #accessing }

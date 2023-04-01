@@ -669,7 +669,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-03-26T19:03:12.516758+03:00"
+									"dateAndTimeString" : "2023-03-31T19:07:02.383634+03:00"
 								}
 							},
 							"uid" : {
@@ -679,7 +679,81 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Условия, в которых на одних и тех же позициях встречаются одни и те же значения, мы назовем **сцепленными**. Такие условия позволяют формировать блоки большего размера. Для блоков большего размера существуем меньше возможных вариантов размещения в таблице, в идеале такой вариант - единственный. Максимально возможный блок в данной задаче охватывает 5 строк."
+							"string" : "Условия, в которых на одних и тех же позициях встречаются одни и те же значения, мы назовем **сцепленными**. Такие условия позволяют формировать блоки большего размера. Для блоков большего размера существует меньше возможных вариантов размещения в таблице, в идеале такой вариант - единственный. Максимально возможный блок в данной задаче охватывает 5 строк."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-04-01T08:20:41.738343+03:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-04-01T08:21:06.589404+03:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "M1tTOaG0DQCLjfuKCBFf1Q=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "{{gtTodo:label=Реализовать сцепку двух условий}}"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-04-01T08:21:09.226617+03:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-04-01T08:24:02.634699+03:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "7Mr2OqG0DQCM1p75CBFf1Q=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "{{gtTodo:label=Реализовать проверку несовместимости условий}}"
 						},
 						{
 							"__type" : "textSnippet",
@@ -743,7 +817,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-03-26T19:06:23.098493+03:00"
+									"dateAndTimeString" : "2023-03-31T19:09:46.445296+03:00"
 								}
 							},
 							"uid" : {
@@ -753,7 +827,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Блок **противоречит** строке, если они сцеплены, но при этом часть блока выходит за пределы таблицы решений."
+							"string" : "Блок **противоречит** строке, если они сцеплены, но при этом часть блока выходит за пределы таблицы решений. Эту часть сложно реализовать, мне кажется, так как нужно формализовать знание о размерах таблицы решений."
 						}
 					]
 				},
@@ -834,7 +908,156 @@
 							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
-								"items" : [ ]
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2023-03-31T18:55:50.130468+03:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2023-03-31T19:10:36.759981+03:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "jODr+pW0DQCI9USaChcTFQ=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "1. объединение условий (возможно, это разовая операция в начале решения), возможно, это и не нужно."
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2023-03-31T19:10:16.720702+03:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2023-03-31T19:10:42.244943+03:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "vf6SLpa0DQCEd8XSAyIdxw=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "2. сцепление имеющихся условий с итоговой таблицей."
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2023-03-31T18:55:58.82888+03:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2023-03-31T19:10:44.980146+03:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "/Zpw+5W0DQCJEB91ChcTFQ=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "3. размещение единственно возможных вариантов (когда все остальные строки заняты, и остается одно возможное значение)."
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2023-03-31T18:41:36.665725+03:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2023-03-31T19:10:21.392307+03:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "TA4NyJW0DQCyX5whChcTFQ=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "4. удаление противоречащих условий из списка (это только варианты ветвлений, обычные строковые условия не противоречат друг другу)."
+									}
+								]
 							},
 							"createEmail" : {
 								"__type" : "email",
@@ -844,7 +1067,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-03-31T18:41:36.665725+03:00"
+									"dateAndTimeString" : "2023-03-31T18:55:37.919268+03:00"
 								}
 							},
 							"editEmail" : {
@@ -855,54 +1078,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-03-31T18:52:09.18436+03:00"
+									"dateAndTimeString" : "2023-03-31T18:55:37.919268+03:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "TA4NyJW0DQCyX5whChcTFQ=="
+								"uidString" : "aYox+pW0DQCIvHi4ChcTFQ=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Такое ощущение, что любое размещение блоков в итоговой таблице - это всего лишь операция объединения (сцепления) блоков. Мне сейчас кажется, что решение будет заключаться в проходе по таблице с одной из нескольких операций: объединение условий (возможно, это разовая операция в начале решения), сцепление имеющихся условий с итоговой таблицей, размещение единственно возможных вариантов (когда все остальные строки заняты, и остается одно возможное зз"
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-03-26T19:13:14.13691+03:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-03-27T06:53:35.993347+03:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "607xozG0DQCuFAC7CgzzGA=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "{{gtTodo:label=Разместить прямые блоки в таблице}} "
+							"string" : "Такое ощущение, что любое размещение блоков в итоговой таблице - это всего лишь операция объединения (сцепления) блоков. Мне сейчас кажется, что решение будет заключаться в проходе по таблице с одной из нескольких операций: "
 						},
 						{
 							"__type" : "textSnippet",

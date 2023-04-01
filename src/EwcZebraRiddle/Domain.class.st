@@ -32,6 +32,20 @@ Domain >> constraintId: anId withFeatures: aCollection [
 ]
 
 { #category : #accessing }
+Domain >> constraintValues: aCollection [
+	^ tuples select: [:each | aCollection includes: each value ].
+]
+
+{ #category : #accessing }
+Domain >> features [
+	| features |
+	features := (self asItems collect: [:each | each key]) asOrderedCollection.
+	features remove: mainFeature.
+	features addFirst: mainFeature.
+	^ features
+]
+
+{ #category : #accessing }
 Domain >> getFeature: aName withValue: aValue [
 	^ tuples detect: [:tuple | (tuple key = aName) and: (tuple value = aValue)]
 ]
