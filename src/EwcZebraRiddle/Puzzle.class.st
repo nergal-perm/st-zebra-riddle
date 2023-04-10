@@ -22,33 +22,37 @@ Puzzle >> addConstraint: aConstraint [
 	constraints add: aConstraint
 ]
 
+{ #category : #'view creation' }
+Puzzle >> constraintValueBlockFor: feature [
+	^ [ :each | each isEntity ifTrue: [ each featureValue: feature ] ifFalse: [ '' ] ]
+]
+
 { #category : #accessing }
 Puzzle >> gtConstraints [
-	^ constraints flatCollect: [:each | (each isKindOf: AlternativeConstraint) ifTrue: [each alternatives] ifFalse: [ {each}]]
+	^ constraints
+		flatCollect: [ :each | 
+			(each isKindOf: AlternativeConstraint)
+				ifTrue: [ each alternatives ]
+				ifFalse: [ {each} ] ]
 ]
 
 { #category : #accessing }
 Puzzle >> gtPuzzleConstraintsFor: aView [
 	<gtView>
-	^ aView columnedTree
-		title: 'Условия';
-		priority: 1;
-		items: self gtConstraints;
-		children: [ :each | each isEntity ifTrue: [ #() ] ifFalse: [ each entities ] ];
-		column: #Ид
-			text: [ :each | each isEntity ifTrue: [ '' ] ifFalse: [ each id ] ];
-		column: #'Номер дома'
-			text: [ :each | each isEntity ifTrue: [ each featureValue: #'Номер дома' ] ifFalse: [ '' ] ];
-		column: 'Национальность'
-			text: [ :each | each isEntity ifTrue: [ each featureValue: #Национальность ] ifFalse: [ '' ] ];
-		column: 'Цвет дома'
-			text: [ :each | each isEntity ifTrue: [ each featureValue: #'Цвет дома' ] ifFalse: [ '' ] ];
-		column: 'Напиток'
-			text: [ :each | each isEntity ifTrue: [ each featureValue: #Напиток ] ifFalse: [ '' ] ];
-		column: 'Сигареты'
-			text: [ :each | each isEntity ifTrue: [ each featureValue: #Сигареты ] ifFalse: [ '' ] ];
-		column: 'Животное'
-			text: [ :each | each isEntity ifTrue: [ each featureValue: #Животное ] ifFalse: [ '' ] ]
+	| resultingView |
+	resultingView := aView columnedTree
+			title: 'Условия';
+			priority: 1;
+			items: self gtConstraints;
+			children: [ :each | each isEntity ifTrue: [ #() ] ifFalse: [ each entities ] ];
+			column: #Ид
+				text: [ :each | each isEntity ifTrue: [ '' ] ifFalse: [ each id ] ].
+
+	domain features
+		do: [ :feature | resultingView column: feature text: (self constraintValueBlockFor: feature) ].
+
+
+	^ resultingView
 ]
 
 { #category : #accessing }
@@ -73,11 +77,13 @@ Puzzle >> isEmpty [
 ]
 
 { #category : #private }
-Puzzle >> setDomain: aCollection andEntityCount: anInteger [
-	domain := aCollection.
+Puzzle >> setDomain: aDomain andEntityCount: anInteger [
+	domain := aDomain.
 	entityCount := anInteger.
 
 	currentState := Constraint
 			withEntities: ((1 to: entityCount)
-					collect: [ :each | Entity new addFeature: (domain getMainFeatureWithValue: each) ])
+					collect: [ :each | 
+						Entity new
+							addFeature: domain mainFeatureName -> (domain mainFeatureValue at: each) ])
 ]

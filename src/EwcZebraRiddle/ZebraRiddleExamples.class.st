@@ -157,7 +157,6 @@ ZebraRiddleExamples >> domain [
 					self featureDrink.
 					self featureCigarettes.
 					self featureAnimal}.
-	describedDomain mainFeature: #'Номер дома'.
 	^ describedDomain 
 ]
 
@@ -169,17 +168,6 @@ ZebraRiddleExamples >> domainForFeature: name withValues: values [
 { #category : #accessing }
 ZebraRiddleExamples >> drink [
 	^ #Напиток
-]
-
-{ #category : #accessing }
-ZebraRiddleExamples >> emptyPuzzle [
-	<gtExample>
-	| puzzle |
-	puzzle := Puzzle withDomain: #() andEntityCount: 0.
-
-	self assert: puzzle isEmpty.
-	
-	^ puzzle
 ]
 
 { #category : #accessing }

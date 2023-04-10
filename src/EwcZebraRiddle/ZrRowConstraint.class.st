@@ -9,7 +9,7 @@ Class {
 	#category : #'EwcZebraRiddle-Behavior'
 }
 
-{ #category : #'instace creation' }
+{ #category : #'instance creation' }
 ZrRowConstraint class >> withId: aString andValues: aCollection from: aDomain [
 	^ ZrRowConstraint new
 		setId: aString;

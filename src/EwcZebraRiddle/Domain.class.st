@@ -11,14 +11,14 @@ Class {
 { #category : #'instance creation' }
 Domain class >> withFeatures: aCollection [
 	^ Domain new
-		setTuples: aCollection;
+		setTuples: aCollection asOrderedCollection;
 		yourself
 ]
 
 { #category : #private }
 Domain >> asItems [
 	| dict |
-	dict := Dictionary new.
+	dict := OrderPreservingDictionary new.
 	tuples
 		do: [ :each | 
 			dict at: each key ifAbsentPut: [ OrderedCollection new ].
@@ -38,21 +38,12 @@ Domain >> constraintValues: aCollection [
 
 { #category : #accessing }
 Domain >> features [
-	| features |
-	features := (self asItems collect: [:each | each key]) asOrderedCollection.
-	features remove: mainFeature.
-	features addFirst: mainFeature.
-	^ features
+	^ (self asItems collect: [ :each | each key ]) asOrderedCollection
 ]
 
 { #category : #accessing }
 Domain >> getFeature: aName withValue: aValue [
 	^ tuples detect: [:tuple | (tuple key = aName) and: (tuple value = aValue)]
-]
-
-{ #category : #accessing }
-Domain >> getMainFeatureWithValue: aValue [
-	^ self getFeature: mainFeature withValue: aValue
 ]
 
 { #category : #'view creation' }
@@ -65,9 +56,14 @@ Domain >> gtValuesByFeatureFor: aView [
 		
 ]
 
-{ #category : #accessing }
-Domain >> mainFeature: aFeatureName [
-	mainFeature := aFeatureName
+{ #category : #private }
+Domain >> mainFeatureName [
+	^ self asItems first key
+]
+
+{ #category : #private }
+Domain >> mainFeatureValue [
+	^ self asItems first value
 ]
 
 { #category : #private }
