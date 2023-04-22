@@ -33,7 +33,11 @@ Domain >> constraintId: anId withFeatures: aCollection [
 
 { #category : #accessing }
 Domain >> constraintValues: aCollection [
-	^ tuples select: [:each | aCollection includes: each value ].
+	| dict |
+	dict := Dictionary new.
+	(tuples select: [ :each | aCollection includes: each value ])
+		do: [ :each | dict at: each key put: each value ].
+	^ dict
 ]
 
 { #category : #accessing }

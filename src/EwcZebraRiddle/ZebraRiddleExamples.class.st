@@ -25,20 +25,23 @@ ZebraRiddleExamples >> Blends_Near_Water_15 [
 ]
 
 { #category : #accessing }
-ZebraRiddleExamples >> BlueMaster_Near_Beer_12 [
-	^ self domain
-		constraintId: '12'
-		withFeatures: {self cigarettes -> #'Blue Master'.
-				self drink -> #пиво}
+ZebraRiddleExamples >> BlueMaster_Beer_12 [
+	<gtExample>
+	^ ZrRowConstraint
+		withId: '12'
+		andValues: {#'Blue Master'.
+				#пиво}
+		from: self domain
 ]
 
 { #category : #accessing }
 ZebraRiddleExamples >> British_Red_1 [
 	<gtExample>
-	^ self domain
-		constraintId: '1'
-		withFeatures: {self nationality -> #британец.
-				self houseColor -> #красный}
+	^ ZrRowConstraint
+		withId: '1'
+		andValues: {#британец.
+				#красный}
+		from: self domain
 ]
 
 { #category : #accessing }
@@ -53,34 +56,42 @@ ZebraRiddleExamples >> Dunhill_Near_Horses_11 [
 
 { #category : #accessing }
 ZebraRiddleExamples >> Dutch_Tea_3 [
-	^ self domain
-		constraintId: '3'
-		withFeatures: {self nationality -> #датчанин.
-				self drink -> #чай}
+	<gtExample>
+	^ ZrRowConstraint
+		withId: '3'
+		andValues: {#датчанин.
+				#чай}
+		from: self domain
 ]
 
 { #category : #accessing }
 ZebraRiddleExamples >> First_Norwegian_9 [
-	^ self domain
-		constraintId: '9'
-		withFeatures: {self houseNumber -> 1.
-				self nationality -> #норвежец}
+	<gtExample>
+	^ ZrRowConstraint
+		withId: '9'
+		andValues: {1.
+				#норвежец}
+		from: self domain
 ]
 
 { #category : #accessing }
 ZebraRiddleExamples >> German_Prince_13 [
-	^ self domain
-		constraintId: '13'
-		withFeatures: {self nationality -> #немец.
-				self cigarettes -> #Prince}
+	<gtExample>
+	^ ZrRowConstraint
+		withId: '13'
+		andValues: {#немец.
+				#Prince}
+		from: self domain
 ]
 
 { #category : #accessing }
 ZebraRiddleExamples >> Green_Coffee_5 [
-	^ self domain
-		constraintId: '5'
-		withFeatures: {self houseColor -> #зеленый.
-				self drink -> #кофе}
+	<gtExample>
+	^ ZrRowConstraint
+		withId: '5'
+		andValues: {#зеленый.
+				#кофе}
+		from: self domain
 ]
 
 { #category : #accessing }
@@ -105,35 +116,42 @@ ZebraRiddleExamples >> Norwegian_Near_Blue_14 [
 
 { #category : #accessing }
 ZebraRiddleExamples >> PallMall_Birds_6 [
-	^ self domain
-		constraintId: '6'
-		withFeatures: {self cigarettes -> #'Pall-Mall'.
-				self animal -> #птицы}
+	<gtExample>
+	^ ZrRowConstraint
+		withId: '6'
+		andValues: {#'Pall-Mall'.
+				#птицы}
+		from: self domain
 ]
 
 { #category : #accessing }
 ZebraRiddleExamples >> Swede_Dog_2 [
 	<gtExample>
-	^ self domain
-		constraintId: '2'
-		withFeatures: {self nationality -> #швед.
-				self animal -> #собаки}
+	^ ZrRowConstraint
+		withId: '2'
+		andValues: {#швед.
+				#собаки}
+		from: self domain
 ]
 
 { #category : #accessing }
 ZebraRiddleExamples >> Third_Milk_8 [
-	^ self domain
-		constraintId: '8'
-		withFeatures: {self houseNumber -> 3.
-				self drink -> #молоко}
+	<gtExample>
+	^ ZrRowConstraint
+		withId: '8'
+		andValues: {3.
+				#молоко}
+		from: self domain
 ]
 
 { #category : #accessing }
 ZebraRiddleExamples >> Yellow_Dunhill_7 [
-	^ self domain
-		constraintId: '7'
-		withFeatures: {self houseColor -> #желтый.
-				self cigarettes -> #Dunhill}
+	<gtExample>
+	^ ZrRowConstraint
+		withId: '7'
+		andValues: {#Dunhill.
+				#желтый}
+		from: self domain
 ]
 
 { #category : #accessing }
@@ -251,7 +269,7 @@ ZebraRiddleExamples >> puzzleWithSimpleConstraints [
 		addConstraint: self First_Norwegian_9;
 		addConstraint: self Blends_Near_Cats_10;
 		addConstraint: self Dunhill_Near_Horses_11;
-		addConstraint: self BlueMaster_Near_Beer_12;
+		addConstraint: self BlueMaster_Beer_12;
 		addConstraint: self German_Prince_13;
 		addConstraint: self Norwegian_Near_Blue_14;
 		addConstraint: self Blends_Near_Water_15.

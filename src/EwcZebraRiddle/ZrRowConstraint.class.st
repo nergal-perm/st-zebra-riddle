@@ -13,32 +13,53 @@ Class {
 ZrRowConstraint class >> withId: aString andValues: aCollection from: aDomain [
 	^ ZrRowConstraint new
 		setId: aString;
-		setFeatures: (aDomain features);
 		setValues: (aDomain constraintValues: aCollection);
 		yourself
 ]
 
-{ #category : #view }
-ZrRowConstraint >> gtConstraintTableFor: aView [
-	<gtView>
-	| view |
-	view := aView columnedList
-			title: 'Таблица ограничений';
-			priority: 1;
-			items: (Entity withFeatures: values) asOrderedCollection.
-	features
-		do: [ :each | view column: each text: [ :entity | entity featureValue: each ] ].
-	^ view
+{ #category : #testing }
+ZrRowConstraint >> complements: aConstraint [
+	^ (aConstraint hasCommonFeatures: values) & (self contradicts: aConstraint) not
+]
+
+{ #category : #accessing }
+ZrRowConstraint >> contradicts: aConstraint [
+	^ aConstraint hasSameFeatureWithDifferentValue: values
+]
+
+{ #category : #accessing }
+ZrRowConstraint >> entities [
+	^ (Entity withFeatures: values associations) asOrderedCollection
 ]
 
 { #category : #testing }
-ZrRowConstraint >> includes: anAssoc [
-	^ values includes: anAssoc.
+ZrRowConstraint >> hasCommonFeatures: aDictionary [
+	| sameFeatures |
+	sameFeatures := values keys intersection: aDictionary keys.
+	^ sameFeatures isNotEmpty
 ]
 
-{ #category : #private }
-ZrRowConstraint >> setFeatures: aCollection [
-	features := aCollection
+{ #category : #testing }
+ZrRowConstraint >> hasSameFeatureWithDifferentValue: aDictionary [
+	| sameFeatures |
+	sameFeatures := values keys intersection: aDictionary keys.
+	^ (sameFeatures
+		allSatisfy: [ :each | (values at: each) = (aDictionary at: each) ]) not
+]
+
+{ #category : #accessing }
+ZrRowConstraint >> id [
+	^ id
+]
+
+{ #category : #testing }
+ZrRowConstraint >> includes: aValue [
+	^ values asDictionary includes: aValue.
+]
+
+{ #category : #testing }
+ZrRowConstraint >> isEntity [
+	^ false
 ]
 
 { #category : #private }
